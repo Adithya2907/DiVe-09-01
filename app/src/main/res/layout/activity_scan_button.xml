@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ScanButton"
+    android:background="@drawable/backgroundf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70sp">
+
+        <Button
+            android:id="@+id/machine1"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:text="Machine 1"
+            app:iconGravity="textEnd"
+            android:background="@drawable/buttonf"
+            android:fontFamily="@font/nova_round"
+            android:textAllCaps="false"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/machine2"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:text="Machine 2"
+            app:iconGravity="textEnd"
+            android:background="@drawable/buttonf"
+            android:fontFamily="@font/nova_round"
+            android:textAllCaps="false"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/machine3"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:text="Machine 3"
+            app:iconGravity="textEnd"
+            android:background="@drawable/buttonf"
+            android:fontFamily="@font/nova_round"
+            android:textAllCaps="false"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/main_menu"
+            android:layout_marginTop="150sp"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:text="main menu"
+            android:background="@drawable/buttonmain"
+            android:fontFamily="@font/nova_round"
+            android:textAllCaps="false"
+            android:textColor="@color/grey"/>
+    </LinearLayout>
+</LinearLayout>

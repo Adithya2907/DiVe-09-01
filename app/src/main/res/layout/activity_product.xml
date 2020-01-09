@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Product"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/grey">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:layout_gravity="center"
+                android:padding="3sp"/>
+
+            <TextView
+                android:id="@+id/owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="monospace"
+                android:text="OWNER : "
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:text="Location : "
+                android:textSize="20sp"
+                android:fontFamily="@font/nova_round"
+                android:textColor="@color/yellow"/>
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/nova_round"
+                android:textColor="@color/yellow"
+                android:text="Product : "
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:outlineAmbientShadowColor="@color/colorAccent"
+                android:layout_margin="10sp"
+                android:id="@+id/progress_circular"/>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:text="Amount : "
+                android:textSize="20sp"
+                android:fontFamily="@font/nova_round"
+                android:textColor="@color/yellow"/>
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/nova_round"
+                android:textColor="@color/yellow"
+                android:text="Quantity Remaining : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:text="Machine ID : "
+                android:textSize="20sp"
+                android:fontFamily="@font/nova_round"
+                android:textColor="@color/yellow"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20sp"
+                    android:text="Open in Maps"
+                    android:fontFamily="@font/nova_round"
+                    app:iconGravity="textEnd"
+                    android:background="@drawable/buttonf"
+                    android:textColor="@color/yellow"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nova_round"
+                    android:layout_margin="20sp"
+                    android:text="Make Payment"
+                    app:iconGravity="textEnd"
+                    android:background="@drawable/buttonf"
+                    android:textColor="@color/yellow"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/main_menu"
+                android:background="@drawable/buttonmain"
+                android:textColor="@color/grey"
+                android:layout_width="200sp"
+                android:fontFamily="@font/nova_round"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:text="Main Menu"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

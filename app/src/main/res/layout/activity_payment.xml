@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Payment"
+    android:background="@drawable/backgroundf">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cust_name"
+            android:hint="Enter your name"
+            android:layout_margin="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cust_mail"
+            android:hint="Enter your e-mail id"
+            android:layout_margin="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cust_number"
+            android:hint="Enter your number"
+            android:inputType="phone"
+            android:layout_margin="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Amount : "
+            android:id="@+id/amount_tv"
+            android:inputType="number"
+            android:fontFamily="@font/nova_round"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="purab.bak@oksbi"
+            android:layout_margin="20sp"
+            android:id="@+id/upi_id"
+            android:fontFamily="@font/nova_round"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purab"
+            android:layout_margin="20sp"
+            android:id="@+id/name"
+            android:fontFamily="@font/nova_round"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description : Payment for DiVe"
+            android:layout_margin="20sp"
+            android:id="@+id/note"
+            android:fontFamily="@font/nova_round"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="100sp"
+            android:background="@drawable/buttonmain"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/nova_round"
+            android:id="@+id/send"
+            android:textSize="20sp"
+            android:layout_below="@+id/note"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:text="confirm"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonmain"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/nova_round"
+            android:id="@+id/cancel"
+            android:textSize="20sp"
+            android:layout_below="@+id/send"
+            android:layout_marginTop="10sp"
+            android:layout_gravity="center"
+            android:text="cancel payment"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test"
+            android:text="test"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
